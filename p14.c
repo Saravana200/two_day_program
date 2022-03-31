@@ -6,21 +6,18 @@ void input_string(char *a)
 int str_reverse(char *string,char *substring)
 {
   int n=0,j=0,index=0;;
-  for(n=0;substring[n]!='\0';n++);
-  for(int i=0;string[i]!='\0';i++)
+  for(int i=0;string[i]!='\0' && substring[j]!='\0';i++)
     {
-      if(string[i]==substring[j])
+      if(substring[j]==string[i])
       {
-        for(j=1;j<n && string[i]!='\0';j++)
-          {
-            if(substring[j]!=string[i+j])
-            {
-              index=-1;
-              j=0;
-              break;
-            }
-            index=i;
-          }
+        j++;
+        if(index==-1)
+          index=i;
+      }
+      else
+      {
+        j=0;
+        index=-1;
       }
     }
   return index;
@@ -31,6 +28,7 @@ void output(char *string,char *substring,int index)
   {
     printf("not found");
   }
+  else
   printf("%d",index);
 }
 int main()

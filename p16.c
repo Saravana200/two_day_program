@@ -35,7 +35,7 @@ void input_n_lines(int n, Line l[n])
     for(int i=0;i<n-1;i++)
     {
         l[i]=input_line();
-        while((i!=0 && l[i].p1.x==l[i-1].p2.x && l[i].p1.y==l[i-1].p2.y) )//|| (i!=0 && l[i].p2.x==l[i-1].p1.x && l[i].p2.y==l[i-1].p1.y))
+        while((i!=0 && l[i].p1.x!=l[i-1].p2.x && l[i].p1.y!=l[i-1].p2.y) || (i!=0 && l[i].p2.x==l[i-1].p1.x && l[i].p2.y==l[i-1].p1.y))
         {
             printf("wrong co ordinates enter the values again\n");
             l[i]=input_line();

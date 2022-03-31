@@ -36,14 +36,15 @@ three sides of the triangle are not equal to each other.
 	<br> 1 2 7 8 12
 	<br> output:
 	<br> 20
+
 <br> 5. Write a program to find gcd (hcf) of two numbers.
 	<br> int input();
 	<br> int gcd(int a, int b);
 	<br> void output(int a, int b, int gcd);
-	input:
-	12 16
-	output
-	4
+	<br>input:
+	<br>12 16
+	<br>output
+	<br>4
 	
 <br> 6.	Write a program to reverse a string.
 	<br> void input_string(char *a);
@@ -159,7 +160,7 @@ three sides of the triangle are not equal to each other.
 	<br> void find_length(Line \*l);
 	<br> void output(Line l);
 	
-<br> 16. Write a program to find the permeter of a polygon   --> IA1-TEST1
+<br> 16. Write a program to find the perimeter of a polygon
 	<br> struct _point {
 	<br>	float x,y;
 	<br> };
@@ -211,9 +212,9 @@ three sides of the triangle are not equal to each other.
 	<br> 2 + 3i 
 	<br> + 4 + 5i is 
 	<br> 6 + 8i
-	
-	
-	<br> 19. Write program to add n fractions(08)
+<br>
+<br>	
+	<br> 19. Write program to add n fractions
 	<br> struct _fraction 
 	<br> {
 	<br>    int num,den;
@@ -225,6 +226,7 @@ three sides of the triangle are not equal to each other.
 	<br> Fraction add_fractions(Fraction f1, Fraction f2);
 	<br> Fraction add_n_fractions(int n,Fraction f[n]);
 	<br> void output(int n, Fraction f[n], Fraction sum);
+<br>
 	
 	
 <br> 20. Write a program to evaluate a polynomial at a given point using horners method. (04)
@@ -236,5 +238,4 @@ three sides of the triangle are not equal to each other.
 	<br> input:
 	<br> 1 1 1
 	<br> output:
-	
 	<br> 1+1\*x + 1\*x^2 at 1.000000 is 1.000000
